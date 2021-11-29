@@ -11,7 +11,7 @@
 
 # Use SCSS partials for colours, flex
 
-# Write a function to display the numbers and claculated result
+# Write a function to display the numbers(onclick) and claculated result
 
 # Write a function for calculations
 
