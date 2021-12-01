@@ -33,10 +33,11 @@ const calculate = () => {
     // console.log(typeof(input));
     // console.log(input);
 
-    let i = input.search(/\D/); //Finds the operator
-    let operator = input.charAt(i);
+    let i = input.search(/[\+\-\⨉\÷]/); //Finds the operator
     console.log(i)
-    let newInput = input.split(/\D/);
+    let operator = input.charAt(i);
+    console.log(operator)
+    let newInput = input.split(operator);
     let num1 =Number(newInput[0]) ;
     let num2 = Number(newInput[1]);
 
