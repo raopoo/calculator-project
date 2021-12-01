@@ -1,0 +1,29 @@
+
+$phone-size : 500px;
+$tablet-size: 700px;
+$laptop-size: 1000px;
+
+
+@mixin phone {
+    @media screen and (max-width: $phone-size) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:($phone-size + 1)) and (max-width: $tablet-size) {
+        @content;
+    }
+}
+
+
+@mixin laptop {
+    @media screen and (min-width: ($tablet-size + 1)) and (max-width: $laptop-size) {
+        @content;
+    }
+}
+@mixin big-screen {
+    @media screen and (min-width: ($laptop-size + 1)) {
+        @content;
+    }
+}

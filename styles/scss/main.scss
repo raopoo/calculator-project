@@ -1,76 +1,98 @@
-*{
+@use "pallette";
+@use 'media';
+
+$borderradius: 20px;
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.main-div{
-    background-color: orangered;
+.main-div {
+    background-color: pallette.$mainbackgroundcolor;
     height: 100vh;
     width: 100vw;
     display: flex;
     // flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-.calc-div{
+.calc-div {
     box-shadow: 20px 20px 0 20px brown;
-    border-radius: 20px;
-    background-color:orange;
-    height: 60%;
-    width: 20%;
+    border-radius: $borderradius;
+    background-color: pallette.$operatorebgcolor;
+    height: 50%;
+    width: 400px;
+    margin: 5px;
+   
+
+    @include media.phone{
+        width: 300px;
+        margin: 5px;
+        height: 40%;
+    }
+    @include media.tablet{
+        width: 400px;
+        margin: 5px;
+        height: 50%;
+    }
+    @include media.laptop{
+        width: 400px;
+        margin: 5px;
+        height: 50%;
+    }
+
+    @include media.big-screen{
+        height: 50%;
+        width: 500px;
+        margin: 5px;
+    }
 }
-.display{
-    background-color:rgb(122, 94, 94);
+.display {
+    background-color: rgb(122, 94, 94);
     height: 20%;
-    border-radius: 20px;
+    border-radius: $borderradius;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.result{
+.result {
     height: 60%;
     width: 80%;
-    border-radius: 20px;
+    border-radius: $borderradius;
     background-color: rgb(241, 177, 57);
     text-align: right;
     padding: 0.5rem;
+    font-size: 40px;
 }
-.calculate-field{
+.calculate-field {
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    background-color: orange;
+    background-color: pallette.$operatorebgcolor;
     height: 80%;
-    border-radius: 20px;
+    border-radius: $borderradius;
 }
-button{
-    border-radius: 20px;
-    color: white;
-    background-color: rgba(250, 137, 8, 0.842);
+.btn {
+    border-radius: $borderradius;
+    color: pallette.$secondarytextcolor;
+    background-color: pallette.$buttonbgprimary;
     margin: 5px;
     border-style: none;
     box-shadow: black 0.1px 2px;
     cursor: pointer;
     font-weight: bold;
-    font-size: large;
+    font-size: 50px;
+
+    &__operators {
+        background-color: pallette.$buttonbgsecondary;
+        color: pallette.$primarytextcolor;
+
+        &--span-two {
+            grid-column: span 2;
+        }
+    }
+
+   
 }
 
-.span-two{
-    grid-column: span 2;
-    background-color: white;
-    color: black;
-}
-
-.oerators{
-    background-color: white;
-    color: black;
-}
-
-// .clippy{
-//     clip-path: polygon(57% 79%, 57% 39%, 100% 74%, 100% 100%, 64% 100%, 43% 79%);
-//     height: 100%;
-//     width: 100%;
-//     background-color:brown;
-// }

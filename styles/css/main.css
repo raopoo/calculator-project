@@ -17,8 +17,37 @@
   box-shadow: 20px 20px 0 20px brown;
   border-radius: 20px;
   background-color: orange;
-  height: 60%;
-  width: 20%;
+  height: 50%;
+  width: 400px;
+  margin: 5px;
+}
+@media screen and (max-width: 500px) {
+  .calc-div {
+    width: 300px;
+    margin: 5px;
+    height: 40%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .calc-div {
+    width: 400px;
+    margin: 5px;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+  .calc-div {
+    width: 400px;
+    margin: 5px;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .calc-div {
+    height: 50%;
+    width: 500px;
+    margin: 5px;
+  }
 }
 
 .display {
@@ -37,6 +66,7 @@
   background-color: #f1b139;
   text-align: right;
   padding: 0.5rem;
+  font-size: 40px;
 }
 
 .calculate-field {
@@ -48,7 +78,7 @@
   border-radius: 20px;
 }
 
-button {
+.btn {
   border-radius: 20px;
   color: white;
   background-color: rgba(250, 137, 8, 0.842);
@@ -57,16 +87,12 @@ button {
   box-shadow: black 0.1px 2px;
   cursor: pointer;
   font-weight: bold;
-  font-size: large;
+  font-size: 50px;
 }
-
-.span-two {
+.btn__operators {
+  background-color: white;
+  color: black;
+}
+.btn__operators--span-two {
   grid-column: span 2;
-  background-color: white;
-  color: black;
-}
-
-.oerators {
-  background-color: white;
-  color: black;
 }
