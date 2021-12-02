@@ -5,7 +5,7 @@
 }
 
 .main-div {
-  background-color: orangered;
+  background-color: #E04900;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -14,44 +14,43 @@
 }
 
 .calc-div {
-  box-shadow: 20px 20px 0 20px brown;
   border-radius: 20px;
-  background-color: orange;
+  background-color: #F7A439;
   height: 50%;
-  width: 400px;
+  min-width: 20rem;
   margin: 5px;
 }
 @media screen and (max-width: 500px) {
   .calc-div {
-    width: 300px;
+    width: 30rem;
     margin: 5px;
-    height: 40%;
+    height: 70%;
   }
 }
 @media screen and (min-width: 501px) and (max-width: 700px) {
   .calc-div {
-    width: 400px;
+    width: 35rem;
     margin: 5px;
-    height: 50%;
+    height: 70%;
   }
 }
 @media screen and (min-width: 701px) and (max-width: 1000px) {
   .calc-div {
-    width: 400px;
+    width: 40rem;
     margin: 5px;
-    height: 50%;
+    height: 70%;
   }
 }
 @media screen and (min-width: 1001px) {
   .calc-div {
-    height: 50%;
-    width: 500px;
+    height: 60%;
+    width: 40rem;
     margin: 5px;
   }
 }
 
 .display {
-  background-color: #7a5e5e;
+  background-color: #635252;
   height: 20%;
   border-radius: 20px;
   display: flex;
@@ -63,17 +62,17 @@
   height: 60%;
   width: 80%;
   border-radius: 20px;
-  background-color: #f1b139;
+  background-color: #F8C782;
   text-align: right;
   padding: 0.5rem;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .calculate-field {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
-  background-color: orange;
+  background-color: #F7A439;
   height: 80%;
   border-radius: 20px;
 }
@@ -81,16 +80,16 @@
 .btn {
   border-radius: 20px;
   color: white;
-  background-color: rgba(250, 137, 8, 0.842);
+  background-color: #F48C1B;
   margin: 5px;
   border-style: none;
   box-shadow: black 0.1px 2px;
   cursor: pointer;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 30px;
 }
 .btn__operators {
-  background-color: white;
+  background-color: #D5D6D6;
   color: black;
 }
 .btn__operators--span-two {

@@ -10,6 +10,7 @@ $borderradius: 20px;
 
 .main-div {
     background-color: pallette.$mainbackgroundcolor;
+    // background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -18,38 +19,39 @@ $borderradius: 20px;
     align-items: center;
 }
 .calc-div {
-    box-shadow: 20px 20px 0 20px brown;
+    //box-shadow: 20px 20px 0 20px brown;
     border-radius: $borderradius;
     background-color: pallette.$operatorebgcolor;
     height: 50%;
-    width: 400px;
+    min-width: 20rem;
     margin: 5px;
    
 
     @include media.phone{
-        width: 300px;
+        width: 30rem;
         margin: 5px;
-        height: 40%;
+        height: 70%;
     }
     @include media.tablet{
-        width: 400px;
+        width: 35rem;
         margin: 5px;
-        height: 50%;
+        height: 70%;
     }
     @include media.laptop{
-        width: 400px;
+        width: 40rem;
         margin: 5px;
-        height: 50%;
+        height: 70%;
     }
 
     @include media.big-screen{
-        height: 50%;
-        width: 500px;
+        height: 60%;
+        width: 40rem;
+        //width: 500px;
         margin: 5px;
     }
 }
 .display {
-    background-color: rgb(122, 94, 94);
+    background-color: pallette.$displaybgcolor;
     height: 20%;
     border-radius: $borderradius;
     display: flex;
@@ -60,10 +62,10 @@ $borderradius: 20px;
     height: 60%;
     width: 80%;
     border-radius: $borderradius;
-    background-color: rgb(241, 177, 57);
+    background-color: pallette.$resultbgcolor;
     text-align: right;
     padding: 0.5rem;
-    font-size: 40px;
+    font-size: 30px;
 }
 .calculate-field {
     display: grid;
@@ -82,7 +84,7 @@ $borderradius: 20px;
     box-shadow: black 0.1px 2px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 
     &__operators {
         background-color: pallette.$buttonbgsecondary;
